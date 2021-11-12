@@ -7,12 +7,15 @@ const reader = readline.createInterface({
 
 
 reader.question("Please, enter your password", function(input){
-	const str = input.length
-    if (str === 10){
+	let str = input.length
+    var upperCaseLetters = /[A-Z]/g;
+
+    if (str === 10 && input.match(upperCaseLetters)){
         console.log("Hi, how are you?")
     } else {
         console.log("Wrong password!")
     }
+    
   reader.close()
 
 });
