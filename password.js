@@ -11,9 +11,9 @@ reader.question("Please, enter your password", function(input){
     var upperCaseLetters = /[A-Z]/g;
 
     if (str === 10 && input.match(upperCaseLetters)){
-        console.log("Hi, how are you?")
+        console.log('Hi, \n' + 'how are you?')
     } else {
-        console.log("Wrong password!")
+        console.log('Wrong \n' + 'password!')
     }
     
   reader.close()
